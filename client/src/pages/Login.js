@@ -22,6 +22,7 @@ const Login = props => {
     event.preventDefault();
 
     try {
+      // execute addUser mutation and pass in variable data from form
       const { data } = await login({
         variables: { ...formState }
       });
